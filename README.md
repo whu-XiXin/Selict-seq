@@ -6,7 +6,7 @@ The tools for analysis data from biochemical method Selict-seq to evaluate genom
 
 ----------------------------------------
 ### The link address:
-Github: https://github.com/sqhan-whu/Selict-seq/
+Github: https://github.com/whu-XiXin/Selict-seq/
 -----------------------------------------
 
 ### Data analysis process
