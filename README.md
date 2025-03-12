@@ -42,7 +42,7 @@ Before running 1_DNAMapping.py, please install snakemake, TrimGalore, bowtie2, s
 
 ```
 snakemake --cores 8
-
 ```
+
 
 
