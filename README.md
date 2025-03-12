@@ -12,4 +12,33 @@ Github: https://github.com/whu-XiXin/Selict-seq/
 ### Data analysis process
 ------------------------------------	
 
+**Create snakemake config file**
 
+```
+
+# samples list
+samples:
+  - sample1
+  - sample2
+  - sample3
+
+# threads conut 
+threads: 8
+
+# Bowtie2 index path
+bowtie2_index: "/genomes/hg19/index/bowtie2/hg19"
+
+# input data path
+path: "/data/raw/"
+
+#genome_size
+genome_size: 3099734149
+
+```
+
+**Runing 1_DNAMapping.py**
+
+```
+snakemake --cores 8
+
+```
