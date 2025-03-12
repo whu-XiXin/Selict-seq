@@ -38,7 +38,7 @@ genome_size: 3099734149
 
 **Runing 1_DNAMapping.py**
 
-##Before running xx.py, please install snakemake, TrimGalore, bowtie2, samtools, and other necessary software on your own. Then, use the bowtie2-build command to construct an index with the reference genome.
+Before running xx.py, please install snakemake, TrimGalore, bowtie2, samtools, and other necessary software on your own. Then, use the bowtie2-build command to construct an index with the reference genome.
 
 ```
 snakemake --cores 8
