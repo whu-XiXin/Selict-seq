@@ -12,7 +12,7 @@ Github: https://github.com/whu-XiXin/Selict-seq/
 ### Data analysis process
 ------------------------------------	
 
-**Create snakemake config file**
+**Create snakemake config file for 1_DNAMapping.py**
 
 ```
 
@@ -39,6 +39,30 @@ genome_size: 3099734149
 **Runing 1_DNAMapping.py**
 
 Before running 1_DNAMapping.py, please install snakemake, TrimGalore, bowtie2, samtools, and other necessary software on your own. Then, use the bowtie2-build command to construct an index with the reference genome.
+
+```
+snakemake --cores 8
+```
+
+**Create snakemake config file for 2_Mutation.py**
+
+```
+# samples list
+samples:
+  - sample1
+  - sample2
+  - sample3
+
+# threads conut 
+threads: 8
+
+#genome_size
+genome_size: 3099734149
+
+```
+**Runing 2_Mutation.py**
+
+Before running 2_Mutation.py, please download SNP site information from public databases on your own, which will be used to remove SNP sites from the mutation sites.
 
 ```
 snakemake --cores 8
