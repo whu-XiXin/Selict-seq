@@ -78,6 +78,18 @@ python 3_Merge_parallel_group.py -1 {sample1_parallel1}.sorted.bam.read1.bam.mut
 **Running 4_Merge_group_rmBackground.py**
 
 ```
-python 4_Merge_group_rmBackground.py -i {sample1}.merge.sorted.bam.read1.bam.mut.stat.nonSNP.txt -bg /home/data/backgroundpath -o /output_path/{sample1}_rmbakeground_output_file.txt
+python 4_Merge_group_rmBackground.py -i {sample1}.sorted.bam.read1.bam.mut.stat.nonSNP.merge.txt -bg /home/data/backgroundpath -o /output_path/{sample1}.sorted.bam.read1.bam.mut.stat.nonSNP.merge.rmbakeground.txt
 ```
-Finally, the BED file generated under the output path represents the editing sites, which can be used as input for downstream data analysis and plotting.
+The BED file generated under the output path represents the editing sites, which can be used as input for downstream data analysis and plotting.
+
+**Running 5_bed-to-art-sgRNA.sh**
+
+Before running 5_bed-to-art-sgRNA.sh, please download Detect-seq from (Github: https://github.com/menghaowei/Detect-seq) on your own.
+
+```
+bash 5_bed-to-art-sgRNA.sh
+```
+
+Then, we obtain the ART file containing information such as the sgRNA sequence, alignment penalty score, and so on. Using this information, we can filter for certain editing sites and plot an sgRNA distribution diagram.
+
+
