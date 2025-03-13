@@ -84,6 +84,8 @@ The BED file generated under the output path represents the editing sites, which
 
 **Running 5_bed-to-art-sgRNA.sh**
 
+In this step, we use the mpmat-to-art-sgRNA.py script from the Detect-seq developed by the Chengqi Yi group for processing.
+
 Before running 5_bed-to-art-sgRNA.sh, please download Detect-seq from (Github: https://github.com/menghaowei/Detect-seq) on your own.
 
 ```
